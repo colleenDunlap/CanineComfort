@@ -1,23 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to Pet Player!
   </h1>
   <form>
       <div class="form-group">
         <label for="exampleInputEmail1">IP Address</label>
-        <input type="text" class="form-control" id="inputIP" aria-describedby="IPAddress" placeholder="Enter email">
+        <input type="text" size="20" class="form-control" id="inputIP" aria-describedby="IPAddress" placeholder="IP Address">
         
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Port</label>
-        <input type="text" class="form-control" id="inputPort" placeholder="Port">
+        <input type="text" size = "20" class="form-control" id="inputPort" placeholder="Port">
       </div>
   </form>
   <br>
-  <button id = "togglebutton" type="button" class="btn btn-success">Toggle the LEDs!</button>
-  <img *ngIf="poke" width = "300" src={{poke.sprites.front_default}} 
+  <img *ngIf="poke" width = "200" src="../assets/vivi.jpg" 
   alt="gr... where my poke at?" />
-    <img *ngIf="poke" width = "300" src={{poke.sprites.back_default}} 
-  alt="gr... where my poke at?" />
+  <br><br>
+  <button id = "togglebutton" type="button" class="btn btn-success">Tell Viola "Mommy Loves You!"</button>
+  <br><br>
+  <button id = "dadbutton" type="button" class="btn btn-success">Tell Viola "Daddy Loves You!"</button>
+  <br><br>
+  <button id = "song" type="button" class="btn btn-success">Sing Viola a Lullaby!</button>
+
+    
 </div>
